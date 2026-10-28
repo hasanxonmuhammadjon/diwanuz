@@ -5,6 +5,8 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  // Uzbek Latin uses ' as a letter (o', g') and as the tutuq belgisi.
+  { rules: { "react/no-unescaped-entities": ["error", { forbid: [">", "}"] }] } },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:

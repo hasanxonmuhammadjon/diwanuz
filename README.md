@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DiwanUz
 
-## Getting Started
+O'zbek (chig'atoy), fors va arab yozuvidagi qo'lyozmalarni sun'iy intellekt yordamida o'qiydigan ochiq platforma.
+«Eng innovatsion g'oya» tanlovi (Toshkent davlat sharqshunoslik universiteti) uchun tayyorlangan.
 
-First, run the development server:
+## Imkoniyatlar
+
+| Sahifa | Nima qiladi |
+|---|---|
+| `/oqish` | Qo'lyozma rasmini yuklash → AI satrlarni topadi, arab yozuvini o'qiydi, lotin yozuviga o'giradi → muharrirda tuzatish → TXT / JSON / PAGE XML eksport → datasetga yuborish |
+| `/qolyozmalar` | Ochiq litsenziyali kutubxona qo'lyozmalari, tasvir va matn satrma-satr bog'langan |
+| `/devon` | Mumtoz shoirlar va she'rlar: lotin/kirill, eski so'zlar lug'ati, AI izohi, aruz tahlili |
+| `/aruz` | Aruz skaneri: baytni hijolarga ajratadi va vaznini aniqlaydi |
+| `/dataset` | Inson tuzatgan satrlardan iborat ochiq dataset (JSON) |
+| `/loyiha` | Hakamlar uchun: tanlovning 5 mezoni bo'yicha |
+
+## 1. Gemini kalitini olish (bepul, 2 daqiqa)
+
+1. https://aistudio.google.com/apikey sahifasiga Google hisobingiz bilan kiring.
+2. **Create API key** tugmasini bosing va kalitni nusxalang.
+3. Loyiha papkasida `.env.example` faylidan nusxa olib, nomini `.env.local` qiling va kalitni yozing:
+
+   ```
+   GEMINI_API_KEY=sizning_kalitingiz
+   ```
+
+Kalitni hech kimga yubormang va internetga joylamang.
+
+## 2. Kompyuterda ishga tushirish
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+So'ng brauzerda http://localhost:3000 ni oching.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Namuna qo'lyozmalarni oldindan o'qib qo'yish (demo paytida AI limiti tugasa ham ishlashi uchun):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run precompute
+```
 
-## Learn More
+## 3. Internetga joylash (Vercel, bepul)
 
-To learn more about Next.js, take a look at the following resources:
+1. https://github.com da hisob oching va loyihani yangi repozitoriyaga yuklang.
+2. https://vercel.com ga GitHub orqali kiring → **Add New Project** → repozitoriyani tanlang.
+3. **Environment Variables** bo'limiga `GEMINI_API_KEY` ni qo'shing → **Deploy**.
+4. Tuzatishlar doimiy saqlanishi uchun: Vercel loyihasida **Storage → Neon (Postgres)** ni ulang.
+   `DATABASE_URL` avtomatik qo'shiladi, jadvallar o'zi yaratiladi.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Texnik ma'lumot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16, React 19, Tailwind CSS 4
+- AI: Google Gemini (Flash modellari). Bir model ishlamasa, keyingisi sinaladi. Natijalar keshlanadi.
+- Aruz skaneri: `src/lib/aruz/` — o'z algoritmimiz, testlar: `npm test`
+- Lotin → kirill: `src/lib/translit/cyrillic.ts`
+- Ma'lumotlar: `DATABASE_URL` bo'lsa Postgres, bo'lmasa `.data/store.json`

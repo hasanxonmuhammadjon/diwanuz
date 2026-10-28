@@ -1,0 +1,143 @@
+[
+  {
+    "slug": "navoiy-princeton-66g",
+    "title": "Navoiy devoni",
+    "author": "Alisher Navoiy (1441–1501)",
+    "institution": "Princeton universiteti kutubxonasi",
+    "shelfmark": "Islamic Manuscripts, Garrett no. 66G",
+    "date": "XVI asr",
+    "script": "nasta'liq",
+    "rights": "No Known Copyright",
+    "rightsUrl": "http://rightsstatements.org/vocab/NKC/1.0/",
+    "recordUrl": "https://catalog.princeton.edu/catalog/9969241023506421",
+    "pages": [
+      {
+        "image": "/manuscripts/navoiy-princeton-66g-p1.jpg",
+        "folio": "1b",
+        "reading": null,
+        "note": "Devon boshlanishi — unvon bezagi ostidagi birinchi g'azal"
+      },
+      {
+        "image": "/manuscripts/navoiy-princeton-66g-p2.jpg",
+        "folio": "2a",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/navoiy-princeton-66g-p3.jpg",
+        "folio": "~29a",
+        "reading": null
+      }
+    ]
+  },
+  {
+    "slug": "navoiy-met-1499",
+    "title": "Navoiy devoni — shoir hayotligidagi nusxa",
+    "author": "Alisher Navoiy · kotib Sulton Ali Mashhadiy",
+    "institution": "Metropolitan san'at muzeyi, Nyu-York",
+    "shelfmark": "13.228.20",
+    "date": "1499–1500, Hirot",
+    "script": "nasta'liq",
+    "rights": "Public Domain (CC0) — The Met Open Access",
+    "rightsUrl": "https://github.com/metmuseum/openaccess",
+    "recordUrl": "https://www.metmuseum.org/art/collection/search/446554",
+    "pages": [
+      {
+        "image": "/manuscripts/navoiy-met-1499-p1.jpg",
+        "folio": "3v",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/navoiy-met-1499-p2.jpg",
+        "folio": "125v",
+        "reading": null
+      }
+    ]
+  },
+  {
+    "slug": "navoiy-berlin-4054",
+    "title": "Navoiy kulliyoti",
+    "author": "Alisher Navoiy (1441–1501)",
+    "institution": "Berlin davlat kutubxonasi",
+    "shelfmark": "Ms. or. fol. 4054",
+    "date": "1845 (1261 h.), Qashqar",
+    "script": "nasta'liq (O'rta Osiyo xati)",
+    "rights": "Public Domain Mark 1.0",
+    "rightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "recordUrl": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN843639563",
+    "pages": [
+      {
+        "image": "/manuscripts/navoiy-berlin-4054-p1.jpg",
+        "folio": "7r",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/navoiy-berlin-4054-p2.jpg",
+        "folio": "19r",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/navoiy-berlin-4054-p3.jpg",
+        "folio": "29r",
+        "reading": null
+      }
+    ]
+  },
+  {
+    "slug": "navoiy-met-1580",
+    "title": "Navoiy devoni",
+    "author": "Alisher Navoiy (1441–1501)",
+    "institution": "Metropolitan san'at muzeyi, Nyu-York",
+    "shelfmark": "13.228.21.1",
+    "date": "1580, Eron (taxminan)",
+    "script": "nasta'liq",
+    "rights": "Public Domain (CC0) — The Met Open Access",
+    "rightsUrl": "https://github.com/metmuseum/openaccess",
+    "recordUrl": "https://www.metmuseum.org/art/collection/search/446555",
+    "pages": [
+      {
+        "image": "/manuscripts/navoiy-met-1580-p1.jpg",
+        "folio": "3r",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/navoiy-met-1580-p2.jpg",
+        "folio": "42r",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/navoiy-met-1580-p3.jpg",
+        "folio": "166r",
+        "reading": null
+      }
+    ]
+  },
+  {
+    "slug": "husayniy-met-1500",
+    "title": "Husayniy devoni",
+    "author": "Sulton Husayn Boyqaro — Husayniy (1438–1506) · kotib Sulton Ali Mashhadiy",
+    "institution": "Metropolitan san'at muzeyi, Nyu-York",
+    "shelfmark": "1982.120.1",
+    "date": "1500 (905 h.), Hirot",
+    "script": "nasta'liq",
+    "rights": "Public Domain (CC0) — The Met Open Access",
+    "rightsUrl": "https://github.com/metmuseum/openaccess",
+    "recordUrl": "https://www.metmuseum.org/art/collection/search/453164",
+    "pages": [
+      {
+        "image": "/manuscripts/husayniy-met-1500-p1.jpg",
+        "folio": "1-tasvir",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/husayniy-met-1500-p2.jpg",
+        "folio": "2-tasvir",
+        "reading": null
+      },
+      {
+        "image": "/manuscripts/husayniy-met-1500-p3.jpg",
+        "folio": "3-tasvir",
+        "reading": null
+      }
+    ]
+  }
+]
